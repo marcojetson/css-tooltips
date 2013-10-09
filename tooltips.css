@@ -1,0 +1,33 @@
+[tooltip] {
+    position: relative;
+}
+
+[tooltip]:before {
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 4px;
+    color: #fff;
+    content: attr(tooltip);
+    display: none;
+    font-size: 11px;
+    left: 0;
+    line-height: 11px;
+    padding: 5px;
+    position: absolute;
+    top: -30px;
+    white-space: nowrap;
+}
+
+[tooltip]:after {
+    content: "";
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid rgba(0, 0, 0, 0.75);
+    display: none;
+    left: 5px;
+    position: absolute;
+    top: -9px;
+}
+
+[tooltip]:hover:before, [tooltip]:hover:after {
+    display: block;
+}
