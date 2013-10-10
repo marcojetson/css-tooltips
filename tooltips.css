@@ -1,8 +1,8 @@
-[tooltip] {
+[data-tooltip] {
     position: relative;
 }
 
-[tooltip]:before {
+[data-tooltip]:before {
     background-color: rgba(0, 0, 0, 0.75);
     border-radius: 4px;
     color: #fff;
@@ -17,7 +17,7 @@
     white-space: nowrap;
 }
 
-[tooltip]:after {
+[data-tooltip]:after {
     content: "";
     border-left: 4px solid transparent;
     border-right: 4px solid transparent;
@@ -28,6 +28,6 @@
     top: -9px;
 }
 
-[tooltip]:hover:before, [tooltip]:hover:after {
+[data-tooltip]:hover:before, [data-tooltip]:hover:after {
     display: block;
 }
